@@ -1,3 +1,4 @@
+/* โหมดปกติ */
 body {
   font-family: "Sarabun", sans-serif, Arial, sans-serif;
   background-color: #f0f2f5;
@@ -57,4 +58,8 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log('✅ Service Worker registered'))
     .catch(err => console.error('❌ SW error:', err));
 }
+
+    .catch(err => console.error('❌ SW error:', err));
+}
+
 
