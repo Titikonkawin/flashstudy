@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { question: "พีทาโกรัสคือสูตรอะไร?", answer: "a² + b² = c²" },
     ],
     science: [
-    { question: "น้ำเดือดที่อุณหภูมิเท่าไหร่?", answer: "100" },
+      { question: "น้ำเดือดที่อุณหภูมิเท่าไหร่?", answer: "100" },
     ],
     english: [
       { question: "คำว่า 'Hello' แปลว่าอะไร?", answer: "สวัสดี" },
@@ -153,3 +153,5 @@ document.addEventListener('DOMContentLoaded', () => {
     showQuestion();
   }
 });
+
+
