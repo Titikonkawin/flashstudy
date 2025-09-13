@@ -1,0 +1,60 @@
+/* โหมดปกติ */
+body {
+  font-family: "Sarabun", sans-serif, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* โหมดกลางคืน */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .btn {
+  background-color: #555;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #888;
+}
+
+/* ข้อความ Quiz */
+#quiz-container {
+  margin-top: 30px;
+  font-size: 18px;
+}
+// ✅ ติดตั้ง service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log('✅ Service Worker registered'))
+    .catch(err => console.error('❌ SW error:', err));
+}

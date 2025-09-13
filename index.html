@@ -1,0 +1,38 @@
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlashStudy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 FlashStudy</h1>
+
+    <button id="toggle-dark" class="btn">🌙 โหมดกลางคืน</button>
+
+    <div class="subject-select">
+      <label for="subject">เลือกวิชา: </label>
+      <select id="subject">
+        <option value="math">คณิตศาสตร์</option>
+        <option value="science">วิทยาศาสตร์</option>
+        <option value="english">อังกฤษ</option>
+      </select>
+    </div>
+
+    <button id="start-quiz" class="btn">🎲 เริ่ม Quiz</button>
+
+    <div id="quiz-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- manifest บอกว่าเป็นแอพ -->
+<link rel="manifest" href="manifest.json" />
+
+<!-- ไอคอน -->
+<link rel="icon" href="icon.png" type="image/png" />
+
+<!-- meta สำหรับแอพ -->
+<meta name="theme-color" content="#3498db">
